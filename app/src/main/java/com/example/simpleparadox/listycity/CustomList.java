@@ -64,4 +64,7 @@ public class CustomList extends ArrayAdapter<City> {
         }
         return flag;
     }
+    public void deletecity(City city){
+        //cities.remove(city);
+    }
 }
