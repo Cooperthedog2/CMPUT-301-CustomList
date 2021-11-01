@@ -45,7 +45,6 @@ public class CustomeListTest {
     public void countcitiestest(){
         int listSize=list.getCount();
         list.addCity(new City("Edmonton","Alberta"));
-        String newcity= "Edmonton";
         assertEquals(listSize+1,list.countcities());
     }
 }
