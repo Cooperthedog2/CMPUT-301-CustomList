@@ -29,9 +29,7 @@ public class CustomeListTest {
     public void hascitytest(){
         int listSize=list.getCount();
         list.addCity(new City("Edmonton","Alberta"));
-        City newcity=new City("Edmonton","Alberta");
-        boolean flag=false;
-        list.hascity(newcity);
+        String newcity= "Edmonton";
         assertTrue(list.hascity(newcity));
     }
 

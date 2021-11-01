@@ -55,7 +55,13 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city){
         cities.add(city);
     }
-    public boolean hascity(City city){
-        return false;
+    public boolean hascity(String city){
+        boolean flag=false;
+        for (int i=0;i<cities.size();i++){
+            if (cities.get(i).getCityName()==city){
+                flag=true;
+            }
+        }
+        return flag;
     }
 }
